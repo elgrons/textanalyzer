@@ -13,9 +13,17 @@ function handleInput(event){
 
   console.log("input array: ", inputArr);
 
+  let favThings = [];
+  favThings.push(inputArr[1]);
+  favThings.push(inputArr[0]);
+  favThings.push(inputArr[2]);
+  console.log("favThings", favThings);
+  //const favThingsList =
 }
 
 window.addEventListener("load", function(){
   const form = document.getElementById("form-id");
   form.addEventListener("submit", handleInput);
 });
+
+//will need new code to connect input, creating new list in html
