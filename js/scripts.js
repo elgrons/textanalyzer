@@ -18,7 +18,19 @@ function handleInput(event){
   favThings.push(inputArr[0]);
   favThings.push(inputArr[2]);
   console.log("favThings", favThings);
-  //const favThingsList =
+  
+  let div = document.createElement("div");
+  document.querySelector("form").append(div);
+
+  let ul = document.createElement("ul");
+  div.append(ul);
+
+  let liOne = document.createElement("li");
+  liOne.append(favThings[1]);
+  ul.append(liOne);
+
+  
+
 }
 
 window.addEventListener("load", function(){
