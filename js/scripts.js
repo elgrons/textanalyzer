@@ -121,16 +121,31 @@ function wordCounter(text) {
 // test 2: empty string
 /*function omitOffence(textphrase, text) {
   return 0;
-};
+};*/
 
 //Test 3//
 // Function is the same as Test 2, but we've updated the variables and parameters.
 
-function omitOffence(textphrase, text) {
+/*function omitOffence(textphrase, text) {
   return 0;
-};
+};*/
 
 //Test 4//
-function omitOffence(textphrase, text) {
+/*function omitOffence(textphrase, text) {
+  if (textphrase === text) {
+    return 1;
+  }
   return 0;
-};
+};*/
+
+//Test 5//return the number of occurrences of a word
+function omitOffence(text, textphrase) {
+  const textArray = textphrase.split(" ");
+  let wordCount = 0;
+  textArray.forEach(function(element) {
+    if (text === element) {
+      wordCount++
+    }
+  });
+  return wordCount;
+}
