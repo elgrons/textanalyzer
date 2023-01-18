@@ -46,12 +46,21 @@ Expected Output: 2
 <!-- new describe() block-->
 Describe: numberOfOccurrencesInText()
 
+<!-- first test -->
 Test: "It should return 0 occurrences of a word for an empty string."
 Code:
 const text = "";
 const word = "red";
 numberOfOccurrencesInText(word, text);
 Expected Output: 0
+
+<!-- second test -->
+Test: "It should return 1 occurrence of a word when the word and the text are the same."
+Code:
+const text = "red";
+const word = "red";
+numberOfOccurrencesInText(word, text);
+Expected Output: 1
 
 ## Setup/Installation Requirements
 
