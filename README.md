@@ -140,9 +140,16 @@ Test: "It should return the number of occurrences of a word regardless of letter
 Code:
 const textphrase = "intake INTAKE Intake tree grow";
 const text = "intake";
-omitOffence(textphrase, text);
+omitOffence(text, textphrase);
 Expected Output: 3
 
+<!-- seventh test -->
+Test: "It should return a word match regardless of punctuation."
+Code:
+const textphrase = "Intake! INTAKE. Let's talk about Intake, tree ,grow.";
+const text = "Intake";
+omitOffence(text, textphrase);
+Expected Output: 3
 
 ## Setup/Installation Requirements
 
