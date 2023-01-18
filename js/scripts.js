@@ -63,10 +63,22 @@ function wordCounter(text) {
   return 0;
 }*/
 
-// if the inputs are equal
-function numberOfOccurrencesInText(word, text){
+// if the inputs are equal (covers test 2 & 3 (if inputs are diff))
+/*function numberOfOccurrencesInText(word, text){
   if (word === text){
     return 1; 
   }
   return 0;
+}*/
+
+// count occurrences
+function numberOfOccurrencesInText(word, text) {
+  const textArray = text.split(" ");
+  let wordCount = 0;
+  textArray.forEach(function(element){
+    if(word === element){
+      wordCount++;
+    }
+  });
+    return wordCount;
 }
