@@ -38,8 +38,10 @@ Test: "It should return 0 for a string that is only spaces."
 Code: wordCounter("            ");
 Expected Output: 0
 
-Fifth Test
-
+<!-- Fifth Test -->
+Test: "It should not count numbers as words."
+Code: wordCounter("hi there 77 19");
+Expected Output: 2
 
 
 ## Setup/Installation Requirements
