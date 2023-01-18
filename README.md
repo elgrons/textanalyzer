@@ -1,4 +1,4 @@
-# Favorite Things Array Practice
+# Test Driven Development Practice
 
 #### By _**Eliot Gronstal, Vera Weikel**_
 
@@ -12,11 +12,19 @@
 
 Webpage to enter favorite things and practice arrays. 
 
+Describe: wordCounter()
+
+Test: "It should return 1 if a passage has just one word."
+Code:
+const text = "hello";
+wordCounter(text);
+Expected Output: 1
+
 ## Setup/Installation Requirements
 
 * _Open a terminal console on your personal computer_
 * _Navigate to your Desktop_
-* _Type $ git clone the [repo](https://github.com/QuietEvolver/programming-language-suggestor-23.git)_
+* _Type $ git clone the [repo]( https://github.com/QuietEvolver/test-driven-development-23.git)_
 * _Navigate into the repo once cloned_
 * _Once in the repository folder, open index.html in browser of choice._
 
