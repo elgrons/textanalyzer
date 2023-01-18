@@ -119,7 +119,13 @@ const text = "intake";
 omitOffence(textphrase, text);
 Expected Output: 0
 
-
+<!-- fourth test -->
+Test: "It should return 1 occurrence of a word when the word and the text are the same."
+Code:
+const textphrase = "intake";
+const text = "intake";
+omitOffence(textphrase, text);
+Expected Output: 1
 
 
 ## Setup/Installation Requirements
