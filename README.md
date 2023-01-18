@@ -33,6 +33,13 @@ Test: "It should return 0 for an empty string."
 Code: wordCounter("");
 Expected Output: 0
 
+<!-- Fourth Test -->
+Test: "It should return 0 for a string that is only spaces."
+Code: wordCounter("            ");
+Expected Output: 0
+
+
+
 ## Setup/Installation Requirements
 
 * _Open a terminal console on your personal computer_
