@@ -38,6 +38,8 @@ Test: "It should return 0 for a string that is only spaces."
 Code: wordCounter("            ");
 Expected Output: 0
 
+Fifth Test
+
 
 
 ## Setup/Installation Requirements

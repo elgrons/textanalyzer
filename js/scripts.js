@@ -16,8 +16,8 @@ function wordCounter(text) {
   return wordCount;
 }*/
 
-// passes 3 tests
-function wordCounter(text) {
+// passes 3 tests: will return 0 if there is no input (err handling)
+/* function wordCounter(text) {
   if(text.length === 0){
     return 0;
   }  
@@ -27,5 +27,17 @@ function wordCounter(text) {
     wordCount++;
   });
   return wordCount;
-}
+}*/
 
+// test 4: will .trim() unecessary white spaces
+// function wordCounter(text) {
+//   if (text.trim().length === 0) {
+//     return 0;
+//   }
+//   let wordCount = 0;
+//   const textArray = text.split(" ");
+//   textArray.forEach(function(word) {
+//     wordCount++;
+//   });
+//   return wordCount;
+// }
