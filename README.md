@@ -70,6 +70,14 @@ const word = "blue";
 numberOfOccurrencesInText(word, text);
 Expected Output: 0
 
+<!-- fourth test -->
+Test: "It should return the number of occurrences of a word."
+Code:
+const text = "red blue red red red green";
+const word = "red";
+numberOfOccurrencesInText(word, text);
+Expected Output: 4
+
 ## Setup/Installation Requirements
 
 * _Open a terminal console on your personal computer_
