@@ -5,7 +5,6 @@ function wordCounter(word){
 }
 */
 
-
 /* test 2: added counter with .forEach() and will increment each time it's true;
 function wordCounter(text) {
   let wordCount = 0;
@@ -43,16 +42,23 @@ function wordCounter(text) {
 // }
 
 // Test 5: built-in JavaScript Number() fx returns a number or NaN; if (NaN), we will increment our wordCount
-function wordCounter(text) {
-  if(text.trim().length === 0){
-    return 0;
-  }  
-  let wordCount = 0;
-  const textArray = text.split(" ");
-  textArray.forEach(function(element) {
-    if( !Number(element) ){
-      wordCount++;
-    }
-  });
-  return wordCount;
+// function wordCounter(text) {
+//   if(text.trim().length === 0){
+//     return 0;
+//   }  
+//   let wordCount = 0;
+//   const textArray = text.split(" ");
+//   textArray.forEach(function(element) {
+//     if( !Number(element) ){
+//       wordCount++;
+//     }
+//   });
+//   return wordCount;
+// }
+
+//Writing and Testing a Second Function for Text Analyzer
+
+function numberOfOccurrencesInText(word, text) {
+  return 0;
 }
+
