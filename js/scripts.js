@@ -139,12 +139,24 @@ function wordCounter(text) {
 };*/
 
 //Test 5//return the number of occurrences of a word
-function omitOffence(text, textphrase) {
+/*function omitOffence(text, textphrase) {
   const textArray = textphrase.split(" ");
   let wordCount = 0;
   textArray.forEach(function(element) {
     if (text === element) {
       wordCount++
+    }
+  });
+  return wordCount;
+}*/
+
+// sixth: return the number of occurrences of a word regardless of letter case
+function omitOffence(text, textphrase){
+  const textphraseArray = textphrase.split(" ");
+  let wordCount = 0; 
+  textphraseArray.forEach(function(element) {
+    if(text.toLowerCase() === element.toLowerCase()){
+      wordCount++;
     }
   });
   return wordCount;
