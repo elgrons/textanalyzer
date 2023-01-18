@@ -151,11 +151,24 @@ function wordCounter(text) {
 }*/
 
 // sixth: return the number of occurrences of a word regardless of letter case
-function omitOffence(text, textphrase){
+/*function omitOffence(text, textphrase){
   const textphraseArray = textphrase.split(" ");
   let wordCount = 0; 
   textphraseArray.forEach(function(element) {
     if(text.toLowerCase() === element.toLowerCase()){
+      wordCount++;
+    }
+  });
+  return wordCount;
+}*/
+
+// seventh Test: "It should return a word match regardless of punctuation.
+
+function omitOffence(text, textphrase) {
+  const textphraseArray = textphrase.split(" ");
+  let wordCount = 0; 
+  textphraseArray.forEach(function(element) {
+    if (element.toLowerCase().includes(text.toLowerCase())) {
       wordCount++;
     }
   });
