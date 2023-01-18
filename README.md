@@ -151,6 +151,14 @@ const text = "Intake";
 omitOffence(text, textphrase);
 Expected Output: 3
 
+<!-- eighth test -->
+Test: "It should identify the const text "zoinks"."
+Code:
+const textphrase = "Zoinks! Intake! INTAKE. Let's talk about Intake, tree ,grow.";
+const text = "zoinks";
+omitOffence(text, textphrase);
+Expected Output: 1
+
 ## Setup/Installation Requirements
 
 * _Open a terminal console on your personal computer_
