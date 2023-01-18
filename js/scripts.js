@@ -41,3 +41,18 @@ function wordCounter(text) {
 //   });
 //   return wordCount;
 // }
+
+// Test 5: built-in JavaScript Number() fx returns a number or NaN; if (NaN), we will increment our wordCount
+function wordCounter(text) {
+  if(text.trim().length === 0){
+    return 0;
+  }  
+  let wordCount = 0;
+  const textArray = text.split(" ");
+  textArray.forEach(function(element) {
+    if( !Number(element) ){
+      wordCount++;
+    }
+  });
+  return wordCount;
+}
