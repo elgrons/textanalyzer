@@ -1,6 +1,6 @@
 # Favorite Things Array Practice
 
-#### By _**Sarah Andyshak, Vera Weikel**_
+#### By _**Eliot Gronstal, Vera Weikel**_
 
 ## Technologies Used
 
@@ -28,7 +28,7 @@ Webpage to enter favorite things and practice arrays.
 
 [MIT](https://choosealicense.com/licenses/mit/)
 
-Copyright (c) _2023_ _Sarah Andyshak, Vera Weikel_
+Copyright (c) _2023_ _Eliot Gronstal, Vera Weikel_
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
