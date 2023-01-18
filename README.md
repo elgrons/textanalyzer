@@ -111,6 +111,15 @@ const text = "intake";
 omitOffence(textphrase, text);
 Expected Output: 0
 
+<!-- third test -->
+Test: "It should return 0 occurrences of a word when the word and the text are different."
+Code:
+const textphrase = "input";
+const text = "intake";
+omitOffence(textphrase, text);
+Expected Output: 0
+
+
 
 
 ## Setup/Installation Requirements
