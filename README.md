@@ -94,6 +94,17 @@ const word = "Red";
 numberOfOccurrencesInText(word, text);
 Expected Output: 3
 
+Describe: omitOffence()
+
+<!-- first test -->
+Test: "It should return 1 if it has a string."
+Code:
+const text = "intake";
+omitOffence(text);
+Expected Output: 1
+
+
+
 ## Setup/Installation Requirements
 
 * _Open a terminal console on your personal computer_
