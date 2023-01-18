@@ -59,7 +59,14 @@ function wordCounter(text) {
 //Writing and Testing a Second Function for Text Analyzer
 
 // how many times a word occurs in an empty string, should be 0 no matter what. 
-function numberOfOccurrencesInText(word, text) {
+/*function numberOfOccurrencesInText(word, text) {
+  return 0;
+}*/
+
+// if the inputs are equal
+function numberOfOccurrencesInText(word, text){
+  if (word === text){
+    return 1; 
+  }
   return 0;
 }
-
