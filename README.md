@@ -127,6 +127,14 @@ const text = "intake";
 omitOffence(textphrase, text);
 Expected Output: 1
 
+<!-- fifth test -->
+Test: "It should return the number of occurrences of a word."
+Code:
+const textphrase = "intake intake tree grow";
+const text = "intake";
+omitOffence(textphrase, text);
+Expected Output: 2
+
 
 ## Setup/Installation Requirements
 
