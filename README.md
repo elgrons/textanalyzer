@@ -135,6 +135,14 @@ const text = "intake";
 omitOffence(textphrase, text);
 Expected Output: 2
 
+<!-- sixth test -->
+Test: "It should return the number of occurrences of a word regardless of letter case."
+Code:
+const textphrase = "intake INTAKE Intake tree grow";
+const text = "intake";
+omitOffence(textphrase, text);
+Expected Output: 3
+
 
 ## Setup/Installation Requirements
 
