@@ -72,7 +72,7 @@ function wordCounter(text) {
 }*/
 
 // count occurrences
-function numberOfOccurrencesInText(word, text) {
+/*function numberOfOccurrencesInText(word, text) {
   const textArray = text.split(" ");
   let wordCount = 0;
   textArray.forEach(function(element){
@@ -81,4 +81,19 @@ function numberOfOccurrencesInText(word, text) {
     }
   });
     return wordCount;
+}*/
+
+// test 5: count++ word match regardless of case
+function numberOfOccurrencesInText(word, text){
+  const textArray = text.split(" ");
+  let wordCount = 0;
+  let xParam = (function(element){
+    if(word.toLowerCase() === element.toLowerCase()){
+      wordCount++;
+    }
+  });
+
+  textArray.forEach(xParam);
+    return wordCount;
 }
+
