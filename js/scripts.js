@@ -114,7 +114,14 @@ function wordCounter(text) {
 // Writing and Testing a Second Function to omit offensive words
 
 // Test 1//
-function omitOffence (text) {
+/* function omitOffence (text) {
   return 1;
-}
+}*/
+
+// text 2: empty string
+function omitOffence(textphrase, text) {
+  return 0;
+};
+
+//Test 3//
 
