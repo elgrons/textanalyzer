@@ -1,4 +1,5 @@
 // Business Logic
+
 /* test 1 if true, will return 1;
 function wordCounter(word){
   return 1;
@@ -99,13 +100,21 @@ function wordCounter(text) {
 */
 
 // .includes(t/f) return a word match regardless of punctuation. 
-function numberOfOccurrencesInText(word, text) {
-  const textArray = text.split(" ");
-  let wordCount = 0;
-  textArray.forEach(function(element){
-    if(element.toLowerCase().includes(word.toLowerCase())){
-      wordCount++;
-    }
-  });
-  return wordCount;
+// function numberOfOccurrencesInText(word, text) {
+//   const textArray = text.split(" ");
+//   let wordCount = 0;
+//   textArray.forEach(function(element){
+//     if(element.toLowerCase().includes(word.toLowerCase())){
+//       wordCount++;
+//     }
+//   });
+//   return wordCount;
+// }
+
+// Writing and Testing a Second Function to omit offensive words
+
+// Test 1//
+function omitOffence (text) {
+  return 1;
 }
+
