@@ -103,6 +103,14 @@ const text = "intake";
 omitOffence(text);
 Expected Output: 1
 
+<!-- second test -->
+Test: "It should return 0 occurences of a word for an empty string."
+Code:
+const textphrase = "";
+const text = "intake";
+omitOffence(textphrase, text);
+Expected Output: 0
+
 
 
 ## Setup/Installation Requirements
