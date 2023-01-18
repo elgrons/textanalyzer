@@ -118,10 +118,19 @@ function wordCounter(text) {
   return 1;
 }*/
 
-// text 2: empty string
-function omitOffence(textphrase, text) {
+// test 2: empty string
+/*function omitOffence(textphrase, text) {
   return 0;
 };
 
 //Test 3//
+// Function is the same as Test 2, but we've updated the variables and parameters.
 
+function omitOffence(textphrase, text) {
+  return 0;
+};
+
+//Test 4//
+function omitOffence(textphrase, text) {
+  return 0;
+};
