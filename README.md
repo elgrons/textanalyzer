@@ -159,6 +159,16 @@ const text = "zoinks";
 omitOffence(text, textphrase);
 Expected Output: 1
 
+<!-- ninth test -->
+Test: "It should isolate the index of bad words text in array."
+Code:
+const textphrase = "Zoinks! Intake! INTAKE. Let's talk about Intake, tree ,grow.";
+const text = "zoinks";
+omitOffence(text, textphrase);
+Expected Output: 0
+
+
+
 ## Setup/Installation Requirements
 
 * _Open a terminal console on your personal computer_
