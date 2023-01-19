@@ -164,13 +164,43 @@ function wordCounter(text) {
 
 // seventh Test: "It should return a word match regardless of punctuation.
 
+// function omitOffence(text, textphrase) {
+//   const textphraseArray = textphrase.split(" ");
+//   let wordCount = 0; 
+//   textphraseArray.forEach(function(element) {
+//     if (element.toLowerCase().includes(text.toLowerCase())) {
+//       wordCount++;
+//     }
+//   });
+//   return wordCount;
+// }
+
+// eighth Test:
+/*function omitOffence(textphrase, text) {
+  return 1;
+};*/
+
+// ninth test: non-fxnl TIP: https://stackoverflow.com/questions/5767325/how-can-i-remove-a-specific-item-from-an-array
 function omitOffence(text, textphrase) {
   const textphraseArray = textphrase.split(" ");
+  const omitArray = [ "zoinks", "muppeteer", "biffaroni", "loopdaloop"];
   let wordCount = 0; 
-  textphraseArray.forEach(function(element) {
-    if (element.toLowerCase().includes(text.toLowerCase())) {
-      wordCount++;
-    }
-  });
+  let indexedOmitWord = omitArray.indexOf("zoinks"); // want to pass in every index of omitArray in a loop
+  console.log("indexedOmitWord: ", indexedOmitWord);
+
+  const index = omitArray.indexOf("zoinks");
+  if (index > -1) { // only splice array when item is found
+    array.splice(index, 2); // 2nd parameter means remove one item only
+  }
+
+  // array = [2, 9]
+  console.log(array);
+  // textphraseArray.forEach(function(element) {
+  //   if (element.toLowerCase().includes(text.toLowerCase())) {
+  //     // const index = 
+  //     wordCount++;
+  //   }
+  // });
+  
   return wordCount;
 }

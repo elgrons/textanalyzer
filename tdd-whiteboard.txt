@@ -78,3 +78,59 @@ const text = "Red! Red. I like red, green, and yellow.";
 const word = "Red";
 numberOfOccurrencesInText(word, text);
 Expected Output: 3
+
+// Third fx - Describe: omitOffence()
+<!-- first test -->
+Test: "It should return 1 if it has a string."
+Code:
+const text = "intake";
+omitOffence(text);
+Expected Output: 1
+
+<!-- second test -->
+Test: "It should return 0 occurences of a word for an empty string."
+Code:
+const textphrase = "";
+const text = "intake";
+omitOffence(textphrase, text);
+Expected Output: 0
+
+<!-- third test -->
+Test: "It should return 0 occurrences of a word when the word and the text are different."
+Code:
+const textphrase = "input";
+const text = "intake";
+omitOffence(textphrase, text);
+Expected Output: 0
+
+<!-- fourth test -->
+Test: "It should return 1 occurrence of a word when the word and the text are the same."
+Code:
+const textphrase = "intake";
+const text = "intake";
+omitOffence(textphrase, text);
+Expected Output: 1
+
+<!-- fifth test -->
+Test: "It should return the number of occurrences of a word."
+Code:
+const textphrase = "intake intake tree grow";
+const text = "intake";
+omitOffence(textphrase, text);
+Expected Output: 2
+
+<!-- sixth test -->
+Test: "It should return the number of occurrences of a word regardless of letter case."
+Code:
+const textphrase = "intake INTAKE Intake tree grow";
+const text = "intake";
+omitOffence(text, textphrase);
+Expected Output: 3
+
+<!-- seventh test -->
+Test: "It should return a word match regardless of punctuation."
+Code:
+const textphrase = "Intake! INTAKE. Let's talk about Intake, tree ,grow.";
+const text = "Intake";
+omitOffence(text, textphrase);
+Expected Output: 3
